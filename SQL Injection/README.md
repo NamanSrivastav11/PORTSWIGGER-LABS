@@ -18,7 +18,12 @@ When the user interacts with the site, it is filtering by **Category** (observed
 
 Used a basic SQLi command "--" in the Category parameter which essentially is a comment indicator in SQL; whcih mean that the rest of the query is interpreted as a comment, effectively removing it.
 
+```
+/filter?category=Corporate+gifts'--
+```
+
 <img width="1631" height="952" alt="image" src="https://github.com/user-attachments/assets/b647881e-b47d-48a5-a423-6dd20ff42e2f" />
+
 It can be observed that now the browser displays four products instead of three.
 
 ---------------------------------------------------------
@@ -26,3 +31,8 @@ Now, to show all values use
 ```
 /filter?category=Corporate+gifts'+OR+1=1--
 ```
+
+<img width="1634" height="957" alt="image" src="https://github.com/user-attachments/assets/49a99e84-9b1d-4369-b1f2-c0ba2fb597f7" />
+
+----------------------------------------------------------
+**Successfully completed the Lab by retrieving the hidden data.**
